@@ -2,33 +2,43 @@
 
 **A standalone Windows application for encrypted file handling.**
 
-CartmanView is a desktop application designed to encrypt files into a custom `.cartman` format and restore them through a dedicated graphical interface. The application organizes the process into clear stages, from file selection and encryption to container inspection and decryption.
+CartmanView is a desktop application designed to encrypt files into a custom `.cartman` format and restore them through a dedicated graphical interface. This project showcases the application's workflow, from file selection and encryption to encrypted file inspection and decryption.
 
 ## 📦 1. Standalone Executable
 
-CartmanView is packaged as a standalone Windows executable, allowing the application to be distributed as a single `.exe` file.
+CartmanView is packaged as a standalone Windows executable, designed to run from a single `.exe` file without requiring the user to manage the application's individual source files.
 
 ![CartmanView Standalone Executable](images/screenshot-00-standalone.png)
 
 ## 🔐 2. Encryption Overview
 
-The Encryption screen is the application's default view. It provides the starting point for selecting a file and initiating the encryption workflow.
+The Encryption screen is the application's default view and the starting point for the encryption workflow. Users can select a file and initiate the process through the graphical interface.
 
 ![CartmanView Encryption Overview](images/screenshot-01-encryption.png)
 
 ### ⚠️ 2.1 File Selection & Warning
 
-After a file is selected, CartmanView displays a warning before proceeding with the operation. This step gives the user an opportunity to review the action before continuing.
+After a file is selected, CartmanView displays a warning before proceeding. This gives users an opportunity to review the operation before continuing.
 
 ![CartmanView File Selection Warning](images/screenshot-02-warning.png)
 
+### 🖼️ 2.2 Encrypted File Verification
+
+This demonstration follows an example JPEG image through the encryption process.
+
+The original image is opened before encryption. After the encryption operation, the original file is removed from its previous location as part of the demonstrated workflow. An attempt to open the resulting `.cartman` container in a standard image viewer fails because the container is not a regular JPEG image.
+
+The encrypted file must be processed through CartmanView's decryption workflow to restore the original image.
+
+![Encrypted File Verification](images/screenshot-03-encrypted-file-verification.png)
+
 ## 📂 3. File View
 
-The File View section presents the application's file-processing workflow. It is divided into three key stages: the processing pipeline, AES-GCM, and CartmanCodec.
+The File View section presents the file-processing workflow through three distinct areas: the processing pipeline, AES-GCM, and CartmanCodec.
 
 ### 3.1 Processing Pipeline
 
-The pipeline illustrates how file data moves through the application's encryption and encoding stages.
+The pipeline illustrates how file data moves through the encryption and encoding stages before being stored in the custom container format.
 
 ```text
 Original File
@@ -43,45 +53,45 @@ CartmanCodec Encoding
 .cartman Container
 ```
 
-![CartmanView Processing Pipeline](images/screenshot-03-pipeline.png)
+![CartmanView Processing Pipeline](images/screenshot-04-pipeline.png)
 
 ### 3.2 AES-GCM
 
-AES-GCM provides authenticated encryption. It protects the confidentiality of the file contents and allows the application to verify the integrity of the encrypted data during decryption.
+AES-GCM provides authenticated encryption, protecting file contents and allowing the application to verify the integrity of encrypted data during decryption.
 
-![CartmanView AES-GCM Details](images/screenshot-04-aes-gcm.png)
+![CartmanView AES-GCM Details](images/screenshot-05-aes-gcm.png)
 
 ### 3.3 CartmanCodec
 
-CartmanCodec handles the application's custom data-encoding layer. It converts the encrypted payload into the representation used by the `.cartman` container and decodes it during restoration.
+CartmanCodec handles the custom encoding layer used by CartmanView. It transforms the encrypted payload into the representation stored in a `.cartman` container and decodes that representation during restoration.
 
-Encoding is separate from encryption: the security of the file depends on the encryption process, not on the custom encoding format.
+Encoding and encryption serve different purposes. The custom format does not replace the underlying cryptographic protection.
 
-![CartmanView CartmanCodec Details](images/screenshot-05-cartmancodec.png)
+![CartmanView CartmanCodec Details](images/screenshot-06-cartmancodec.png)
 
 ## 🔓 4. Decryption
 
-The Decryption screen provides the interface for selecting a `.cartman` file and restoring its contents. During the process, the encoded payload is decoded and the encrypted data is authenticated and decrypted.
+The Decryption screen provides the interface for selecting a `.cartman` container and restoring its contents.
 
-Successful restoration requires the correct password and valid encrypted data.
+During restoration, the container is decoded and the encrypted payload is authenticated and decrypted. Successful restoration requires the correct password and valid encrypted data.
 
-![CartmanView Decryption](images/screenshot-06-decryption.png)
+![CartmanView Decryption](images/screenshot-07-decryption.png)
 
 ## ℹ️ 5. About
 
-The About section presents the application's identity and information through its dedicated interface.
+The About section presents the application's identity and descriptive information through its dedicated interface.
 
-![CartmanView About](images/screenshot-07-about.png)
+![CartmanView About](images/screenshot-08-about.png)
 
 ## 📥 6. Distribution
 
 The standalone Windows executable can be published through the repository's [Releases](../../releases) section.
 
-This repository serves as a project showcase. The application source code is not publicly included.
+This repository serves as a showcase for the application and its graphical interface. The application source code is not publicly included.
 
 ## ⚠️ Disclaimer
 
-CartmanView is an independent personal project and has not been presented as independently audited security software. Keep backups of important files and protect your passwords. Do not rely on the application as the sole copy of important data.
+CartmanView is an independent personal project and has not been presented as independently audited security software. Keep separate backups of important files and protect your passwords. Do not rely on the application as the sole copy of important data.
 
 ---
 
