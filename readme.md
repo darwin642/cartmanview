@@ -67,6 +67,8 @@ CartmanCodec handles the custom encoding layer used by CartmanView. It transform
 
 Encoding and encryption serve different purposes. The custom format does not replace the underlying cryptographic protection.
 
+The codes you see will not be enough for you to understand how lettering works, each letter has it's own 20 different versions. The codes mathematically can't be same. :=)
+
 ![CartmanView CartmanCodec Details](screenshot-06-cartmancodec.png)
 
 ## 🔓 4. Decryption
@@ -88,6 +90,26 @@ The About section presents the application's identity and descriptive informatio
 The standalone Windows executable can be published through the repository's [Releases](../../releases) section.
 
 This repository serves as a showcase for the application and its graphical interface. The application source code is not publicly included.
+
+The time i am sure the program is reverse engineering proof, i will share the .exe file.
+
+
+
+Here's the catch.
+
+I will upload the .cartman file, the original extension .pdf .  If you can crack it and decrypt it, please feel free to share the decrypted file. It should look like this:
+
+![CartmanView About](pdf.png)
+
+Here's the file.
+
+[Dosyayı görüntüle](macbook_schema.pdf)
+
+Good luck.
+
+Let me know the time you decrypt it, explaination would be so cool.
+
+Email: kaan2002tf2@gmail.com
 
 ## ⚠️ Disclaimer
 
