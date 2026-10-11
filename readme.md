@@ -106,7 +106,7 @@ I will upload the .cartman file, the original extension .pdf .  If you can crack
 
 ##Here's the file.
 
-[Dosyayı görüntüle](macbook_schema.pdf.cartman)
+[macbook_schema.pdf.cartman](macbook_schema.pdf.cartman)
 
 The password has 8 characters as it's on the screenshot.
 
