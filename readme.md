@@ -104,9 +104,9 @@ I will upload the .cartman file, the original extension .pdf .  If you can crack
 
 ![CartmanView About](pdf.png)
 
-##Here's the file.
+## Here's the file link, it will redirect to google drive.
 
-[macbook_schema.pdf.cartman](macbook_schema.pdf.cartman)
+[Link](https://drive.google.com/file/d/1vkmzHBW0OSRrvbQSk4IuEz5yPjJoWtSt/view?usp=sharing)
 
 The password has 8 characters as it's on the screenshot.
 
