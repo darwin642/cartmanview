@@ -119,7 +119,3 @@ Email: kaan2002tf2@gmail.com
 ## ⚠️ Disclaimer
 
 CartmanView is an independent personal project and has not been presented as independently audited security software. Keep separate backups of important files and protect your passwords. Do not rely on the application as the sole copy of important data.
-
----
-
-**CartmanView — Encrypted files. A dedicated viewer.**
