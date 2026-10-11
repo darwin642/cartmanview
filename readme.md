@@ -3,6 +3,9 @@
 **A standalone Windows application for encrypted file handling.**
 
 CartmanView is a desktop application designed to encrypt files into a custom `.cartman` format and restore them through a dedicated graphical interface. This project showcases the application's workflow, from file selection and encryption to encrypted file inspection and decryption.
+CartmanView combines AES-GCM encryption with a custom encoding mechanism called CartmanCodec, designed to support numbers, Unicode and non-Unicode characters, symbols, emojis, and characters from virtually any language.
+
+The core principle behind CartmanCodec is straightforward: it processes the input at the byte level, transforming each byte into a value that can represent up to 20 character values. The mapping can vary across up to 15 different values, providing a flexible, custom encoding scheme.
 
 ## 📦 1. Standalone Executable
 
@@ -95,17 +98,17 @@ The time i am sure the program is reverse engineering proof, i will share the .e
 
 
 
-Here's the catch.
+## Here's the catch.
 
 I will upload the .cartman file, the original extension .pdf .  If you can crack it and decrypt it, please feel free to share the decrypted file. It should look like this:
 
 ![CartmanView About](pdf.png)
 
-Here's the file.
+##Here's the file.
 
 [Dosyayı görüntüle](macbook_schema.pdf)
 
-Good luck.
+Good luck decrypting it.
 
 Let me know the time you decrypt it, explaination would be so cool.
 
