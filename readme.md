@@ -7,6 +7,10 @@ CartmanView combines AES-GCM encryption with a custom encoding mechanism called 
 
 The core principle behind CartmanCodec is straightforward: it processes the input at the byte level, transforming each byte into a value that can represent up to 20 character values. The mapping can vary across up to 15 different values, providing a flexible, custom encoding scheme.
 
+You can see updates about CartmanView vs Ransomware deletion / Decryption programs.
+
+![Click Here](stan.md)
+
 ## 📦 1. Standalone Executable
 
 CartmanView is packaged as a standalone Windows executable, designed to run from a single `.exe` file without requiring the user to manage the application's individual source files.
