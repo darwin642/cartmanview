@@ -8,19 +8,19 @@ CartmanView is a desktop application designed to encrypt files into a custom `.c
 
 CartmanView is packaged as a standalone Windows executable, designed to run from a single `.exe` file without requiring the user to manage the application's individual source files.
 
-![CartmanView Standalone Executable](images/screenshot-00-standalone.png)
+![CartmanView Standalone Executable](screenshot-00-standalone.png)
 
 ## 🔐 2. Encryption Overview
 
 The Encryption screen is the application's default view and the starting point for the encryption workflow. Users can select a file and initiate the process through the graphical interface.
 
-![CartmanView Encryption Overview](images/screenshot-01-encryption.png)
+![CartmanView Encryption Overview](screenshot-01-encryption.png)
 
 ### ⚠️ 2.1 File Selection & Warning
 
 After a file is selected, CartmanView displays a warning before proceeding. This gives users an opportunity to review the operation before continuing.
 
-![CartmanView File Selection Warning](images/screenshot-02-warning.png)
+![CartmanView File Selection Warning](screenshot-02-warning.png)
 
 ### 🖼️ 2.2 Encrypted File Verification
 
@@ -30,7 +30,7 @@ The original image is opened before encryption. After the encryption operation, 
 
 The encrypted file must be processed through CartmanView's decryption workflow to restore the original image.
 
-![Encrypted File Verification](images/screenshot-03-encrypted-file-verification.png)
+![Encrypted File Verification](screenshot-03-encrypted-file-verification.png)
 
 ## 📂 3. File View
 
@@ -53,13 +53,13 @@ CartmanCodec Encoding
 .cartman Container
 ```
 
-![CartmanView Processing Pipeline](images/screenshot-04-pipeline.png)
+![CartmanView Processing Pipeline](screenshot-04-pipeline.png)
 
 ### 3.2 AES-GCM
 
 AES-GCM provides authenticated encryption, protecting file contents and allowing the application to verify the integrity of encrypted data during decryption.
 
-![CartmanView AES-GCM Details](images/screenshot-05-aes-gcm.png)
+![CartmanView AES-GCM Details](screenshot-05-aes-gcm.png)
 
 ### 3.3 CartmanCodec
 
@@ -67,7 +67,7 @@ CartmanCodec handles the custom encoding layer used by CartmanView. It transform
 
 Encoding and encryption serve different purposes. The custom format does not replace the underlying cryptographic protection.
 
-![CartmanView CartmanCodec Details](images/screenshot-06-cartmancodec.png)
+![CartmanView CartmanCodec Details](screenshot-06-cartmancodec.png)
 
 ## 🔓 4. Decryption
 
@@ -75,13 +75,13 @@ The Decryption screen provides the interface for selecting a `.cartman` containe
 
 During restoration, the container is decoded and the encrypted payload is authenticated and decrypted. Successful restoration requires the correct password and valid encrypted data.
 
-![CartmanView Decryption](images/screenshot-07-decryption.png)
+![CartmanView Decryption](screenshot-07-decryption.png)
 
 ## ℹ️ 5. About
 
 The About section presents the application's identity and descriptive information through its dedicated interface.
 
-![CartmanView About](images/screenshot-08-about.png)
+![CartmanView About](screenshot-08-about.png)
 
 ## 📥 6. Distribution
 
